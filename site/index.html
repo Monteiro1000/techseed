@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tecnologia para o Futuro</title>
+    <link rel="stylesheet" href="estilo/style.css">
+    <link rel="shortcut icon" href="img/Outfit.svg" type="image/x-icon">
+    <script src="JS/scipt.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'tech-blue': '#0066CC',
+                        'tech-green': '#00CC66',
+                        'tech-dark': '#1a1a2e',
+                        'tech-light': '#f8fafc'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-tech-light">
+    <!-- Header -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center space-x-2">
+                    <div class="w-8 h-8 bg-gradient-to-r from-tech-blue to-tech-green rounded-lg flex items-center justify-center">
+                        <span class="text-white font-bold text-sm">TS</span>
+                    </div>
+                    <span class="text-xl font-bold text-tech-dark">TechSeed: A semente da inovação </span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#inicio" class="text-gray-700 hover:text-tech-blue transition-colors">Início</a>
+                    <a href="#projeto" class="text-gray-700 hover:text-tech-blue transition-colors">Projeto</a>
+                    <a href="#oficinas" class="text-gray-700 hover:text-tech-blue transition-colors">Oficinas</a>
+                    <a href="#estudante" class="text-gray-700 hover:text-tech-blue transition-colors">Área do Estudante</a>
+                    <a href="#impacto" class="text-gray-700 hover:text-tech-blue transition-colors">Impacto</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="gradient-bg min-h-screen flex items-center relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <div class="floating-animation absolute top-20 left-10 text-6xl">💻</div>
+            <div class="floating-animation absolute top-40 right-20 text-4xl" style="animation-delay: -2s;">🚀</div>
+            <div class="floating-animation absolute bottom-40 left-20 text-5xl" style="animation-delay: -4s;">⚡</div>
+            <div class="floating-animation absolute bottom-20 right-10 text-3xl" style="animation-delay: -1s;">🌟</div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <h1 class="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
+                TechSeed: A semente da  <span class="text-tech-green">Futuro</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-white/90 mb-12 max-w-3xl mx-auto leading-relaxed">
+                Transformando escolas públicas com inovação digital
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <button class="bg-white text-tech-blue px-8 py-4 rounded-full font-semibold text-lg hover:bg-gray-100 transition-all hover-scale">
+                    Conhecer o Projeto
+                </button>
+                <button class="border-2 border-white text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white hover:text-tech-blue transition-all hover-scale">
+                    Ver Oficinas
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre o Projeto -->
+    <section id="projeto" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-tech-dark mb-6">Sobre o Projeto</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Levamos tecnologia e inovação para dentro das escolas públicas, criando oportunidades e transformando futuros
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="tech-card rounded-2xl p-8 text-center hover-scale">
+                    <div class="w-16 h-16 bg-gradient-to-r from-tech-blue to-tech-green rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="text-2xl">🌐</span>
+                    </div>
+                    <h3 class="text-xl font-semibold text-tech-dark mb-4">Inclusão Digital</h3>
+                    <p class="text-gray-600">Democratizando o acesso à tecnologia e reduzindo a desigualdade digital</p>
+                </div>
+                
+                <div class="tech-card rounded-2xl p-8 text-center hover-scale">
+                    <div class="w-16 h-16 bg-gradient-to-r from-tech-blue to-tech-green rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="text-2xl">👨‍💻</span>
+                    </div>
+                    <h3 class="text-xl font-semibold text-tech-dark mb-4">Programação</h3>
+                    <p class="text-gray-600">Oficinas extracurriculares de programação adaptadas para jovens</p>
+                </div>
+                
+                <div class="tech-card rounded-2xl p-8 text-center hover-scale">
+                    <div class="w-16 h-16 bg-gradient-to-r from-tech-blue to-tech-green rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="text-2xl">🛡️</span>
+                    </div>
+                    <h3 class="text-xl font-semibold text-tech-dark mb-4">Cidadania Digital</h3>
+                    <p class="text-gray-600">Educação sobre uso responsável e seguro da tecnologia</p>
+                </div>
+                
+                <div class="tech-card rounded-2xl p-8 text-center hover-scale">
+                    <div class="w-16 h-16 bg-gradient-to-r from-tech-blue to-tech-green rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="text-2xl">💡</span>
+                    </div>
+                    <h3 class="text-xl font-semibold text-tech-dark mb-4">Inovação</h3>
+                    <p class="text-gray-600">Desenvolvendo soluções criativas para problemas reais da comunidade</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Oficinas -->
+    <section id="oficinas" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-tech-dark mb-6">Nossas Oficinas</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Conteúdo prático e envolvente para despertar o interesse pela tecnologia
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover-scale">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-tech-blue rounded-lg flex items-center justify-center mr-4">
+                            <span class="text-white text-xl">🖥️</span>
+                        </div>
+                        <h3 class="text-2xl font-semibold text-tech-dark">Informática & Cidadania Digital</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">Fundamentos de informática, navegação segura na internet, privacidade digital e combate ao cyberbullying.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-tech-blue/10 text-tech-blue px-3 py-1 rounded-full text-sm">Básico</span>
+                        <span class="bg-tech-green/10 text-tech-green px-3 py-1 rounded-full text-sm">Segurança</span>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover-scale">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-tech-green rounded-lg flex items-center justify-center mr-4">
+                            <span class="text-white text-xl">⚡</span>
+                        </div>
+                        <h3 class="text-2xl font-semibold text-tech-dark">Programação Básica</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">Introdução à lógica de programação com Scratch, Python para iniciantes e criação de páginas web com HTML/CSS.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-tech-blue/10 text-tech-blue px-3 py-1 rounded-full text-sm">Scratch</span>
+                        <span class="bg-tech-green/10 text-tech-green px-3 py-1 rounded-full text-sm">Python</span>
+                        <span class="bg-purple-100 text-purple-600 px-3 py-1 rounded-full text-sm">HTML/CSS</span>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover-scale">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-purple-500 rounded-lg flex items-center justify-center mr-4">
+                            <span class="text-white text-xl">🤖</span>
+                        </div>
+                        <h3 class="text-2xl font-semibold text-tech-dark">Robótica Educacional</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">Construção e programação de robôs simples, quando equipamentos estão disponíveis na escola.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-purple-100 text-purple-600 px-3 py-1 rounded-full text-sm">Arduino</span>
+                        <span class="bg-tech-blue/10 text-tech-blue px-3 py-1 rounded-full text-sm">Sensores</span>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover-scale">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-orange-500 rounded-lg flex items-center justify-center mr-4">
+                            <span class="text-white text-xl">🎯</span>
+                        </div>
+                        <h3 class="text-2xl font-semibold text-tech-dark">Projetos Práticos</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">Desenvolvimento de soluções tecnológicas para problemas reais da escola e comunidade local.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-orange-100 text-orange-600 px-3 py-1 rounded-full text-sm">Inovação</span>
+                        <span class="bg-tech-green/10 text-tech-green px-3 py-1 rounded-full text-sm">Comunidade</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Onde Acontecem -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-tech-dark mb-6">Onde Acontecem as Oficinas</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Adaptamos nosso conteúdo para diferentes espaços e realidades escolares
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="text-center p-6">
+                    <div class="w-20 h-20 bg-gradient-to-r from-tech-blue to-tech-green rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-3xl">🖥️</span>
+                    </div>
+                    <h3 class="text-lg font-semibold text-tech-dark mb-2">Laboratórios de Informática</h3>
+                    <p class="text-gray-600 text-sm">Aproveitando a infraestrutura existente nas escolas</p>
+                </div>
+                
+                <div class="text-center p-6">
+                    <div class="w-20 h-20 bg-gradient-to-r from-tech-blue to-tech-green rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-3xl">📚</span>
+                    </div>
+                    <h3 class="text-lg font-semibold text-tech-dark mb-2">Bibliotecas Escolares</h3>
+                    <p class="text-gray-600 text-sm">Transformando espaços de leitura em centros de inovação</p>
+                </div>
+                
+                <div class="text-center p-6">
+                    <div class="w-20 h-20 bg-gradient-to-r from-tech-blue to-tech-green rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-3xl">🏢</span>
+                    </div>
+                    <h3 class="text-lg font-semibold text-tech-dark mb-2">Espaços Comunitários</h3>
+                    <p class="text-gray-600 text-sm">Levando tecnologia para além dos muros da escola</p>
+                </div>
+                
+                <div class="text-center p-6">
+                    <div class="w-20 h-20 bg-gradient-to-r from-tech-blue to-tech-green rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-3xl">🌐</span>
+                    </div>
+                    <h3 class="text-lg font-semibold text-tech-dark mb-2">Ambiente Online</h3>
+                    <p class="text-gray-600 text-sm">Continuidade do aprendizado através de plataformas digitais</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Área do Estudante -->
+    <section id="estudante" class="py-20 gradient-bg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">Área do Estudante</h2>
+                <p class="text-xl text-white/90 max-w-3xl mx-auto">
+                    Acesse suas aulas, projetos e acompanhe seu progresso na jornada tecnológica
+                </p>
+            </div>
+            
+            <div class="bg-white/10 backdrop-blur-lg rounded-3xl p-8 md:p-12 border border-white/20">
+                <div class="grid md:grid-cols-3 gap-6">
+                    <button class="bg-white text-tech-blue p-6 rounded-2xl font-semibold text-lg hover:bg-gray-100 transition-all hover-scale flex flex-col items-center space-y-3">
+                        <span class="text-3xl">📝</span>
+                        <span>Inscrever-se</span>
+                        <span class="text-sm opacity-70">Participe das próximas oficinas</span>
+                    </button>
+                    
+                    <button class="bg-white text-tech-blue p-6 rounded-2xl font-semibold text-lg hover:bg-gray-100 transition-all hover-scale flex flex-col items-center space-y-3">
+                        <span class="text-3xl">🎓</span>
+                        <span>Acessar Aulas Online</span>
+                        <span class="text-sm opacity-70">Continue aprendendo em casa</span>
+                    </button>
+                    
+                    <button class="bg-white text-tech-blue p-6 rounded-2xl font-semibold text-lg hover:bg-gray-100 transition-all hover-scale flex flex-col items-center space-y-3">
+                        <span class="text-3xl">🚀</span>
+                        <span>Projetos Desenvolvidos</span>
+                        <span class="text-sm opacity-70">Veja o que você já criou</span>
+                    </button>
+                </div>
+                
+                <div class="mt-8 p-6 bg-white/10 rounded-2xl border border-white/20">
+                    <div class="flex items-center justify-center space-x-2 text-white/80">
+                        <span class="text-sm">⚠️</span>
+                        <span class="text-sm">Esta é uma versão demonstrativa da área do estudante</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impacto -->
+    <section id="impacto" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-tech-dark mb-6">Nosso Impacto</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Transformando vidas e comunidades através da educação tecnológica
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h3 class="text-3xl font-bold text-tech-dark mb-8">Benefícios para os Jovens</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-8 h-8 bg-tech-green rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                <span class="text-white text-sm">✓</span>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-tech-dark mb-2">Inclusão Digital Efetiva</h4>
+                                <p class="text-gray-600">Acesso democrático às tecnologias digitais e desenvolvimento de competências essenciais para o século XXI.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-4">
+                            <div class="w-8 h-8 bg-tech-green rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                <span class="text-white text-sm">✓</span>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-tech-dark mb-2">Preparação para o Mercado</h4>
+                                <p class="text-gray-600">Desenvolvimento de habilidades técnicas e soft skills valorizadas pelo mercado de trabalho moderno.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-4">
+                            <div class="w-8 h-8 bg-tech-green rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                <span class="text-white text-sm">✓</span>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-tech-dark mb-2">Protagonismo Juvenil</h4>
+                                <p class="text-gray-600">Empoderamento dos jovens como agentes de transformação em suas comunidades através da tecnologia.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-3xl font-bold text-tech-dark mb-8">Benefícios para as Escolas</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-8 h-8 bg-tech-blue rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                <span class="text-white text-sm">✓</span>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-tech-dark mb-2">Modernização do Ensino</h4>
+                                <p class="text-gray-600">Integração de metodologias inovadoras e tecnologias educacionais no ambiente escolar.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-4">
+                            <div class="w-8 h-8 bg-tech-blue rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                <span class="text-white text-sm">✓</span>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-tech-dark mb-2">Engajamento Estudantil</h4>
+                                <p class="text-gray-600">Aumento do interesse e participação dos alunos através de atividades práticas e relevantes.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-4">
+                            <div class="w-8 h-8 bg-tech-blue rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                <span class="text-white text-sm">✓</span>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-tech-dark mb-2">Conexão com a Comunidade</h4>
+                                <p class="text-gray-600">Fortalecimento dos laços entre escola e comunidade através de projetos colaborativos.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-tech-dark text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <div class="flex items-center justify-center space-x-2 mb-6">
+                    <div class="w-10 h-10 bg-gradient-to-r from-tech-blue to-tech-green rounded-lg flex items-center justify-center">
+                        <span class="text-white font-bold">TS</span>
+                    </div>
+                    <span class="text-2xl font-bold">TechSeed: A semente da inovação</span>
+                </div>
+                <p class="text-gray-400 mb-8 max-w-2xl mx-auto">
+                    Transformando o futuro da educação através da tecnologia, uma escola de cada vez.
+                </p>
+                <div class="flex justify-center space-x-6 text-3xl mb-8">
+                    <span class="hover:scale-110 transition-transform cursor-pointer">📧</span>
+                    <span class="hover:scale-110 transition-transform cursor-pointer">📱</span>
+                    <span class="hover:scale-110 transition-transform cursor-pointer">🌐</span>
+                </div>
+                <p class="text-gray-500 text-sm">
+                    © 2024 Tecnologia para o Futuro. Projeto educacional sem fins lucrativos.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling para links de navegação
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Animação de entrada para elementos quando aparecem na tela
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Aplicar animação aos cards
+        document.querySelectorAll('.tech-card, .hover-scale').forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(30px)';
+            card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(card);
+        });
+
+        // Funcionalidade dos botões da área do estudante
+        document.querySelectorAll('#estudante button').forEach(button => {
+            button.addEventListener('click', function() {
+                const buttonText = this.querySelector('span:nth-child(2)').textContent;
+                alert(`Funcionalidade "${buttonText}" em desenvolvimento!\n\nEsta é uma versão demonstrativa do projeto.`);
+            });
+        });
+
+        // Efeito de digitação no título principal
+        function typeWriter(element, text, speed = 100) {
+            let i = 0;
+            element.innerHTML = '';
+            function type() {
+                if (i < text.length) {
+                    element.innerHTML += text.charAt(i);
+                    i++;
+                    setTimeout(type, speed);
+                }
+            }
+            type();
+        }
+
+        // Aplicar efeito de digitação quando a página carrega
+        window.addEventListener('load', () => {
+            const title = document.querySelector('h1');
+            const originalText = title.textContent;
+            typeWriter(title, originalText, 80);
+        });
+    </script>
+</body>
+</html>
